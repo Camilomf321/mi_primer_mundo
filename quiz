@@ -1,0 +1,32 @@
+"""
+Este programa es parte del primer quiz de la unidad de 
+estudio programación para no programadores, consiste en
+explorar y aplicar las opciones de la aplicación reeborg.
+
+Autor: Camilo Murcia
+Fecha: Lunes, 29 de julio de 2019
+"""
+
+
+print("Hola soy Reeborg :). ")
+print("Haré una misión ")
+
+#repeat nos permite iterar un comando, en este caso: move
+repeat 5 :
+    #move hace que el robot avanze una posición
+    move()
+#pause()
+
+#take es un comando que permite recoger el objeto que hay en la casilla en la que esta el robot
+take("apple")
+#pause()
+#el comando put permite dejar un objeto en la casilla actual, en este caso una banana
+put("banana")
+#pause()
+
+repeat 2 :
+    #Este comando hace que el robot gire 90° a la izquierda
+    turn_left()
+repeat 5 :
+    move()
+    
