@@ -1,0 +1,58 @@
+'''
+DESCRIPCION:
+recorrer mundo
+pre: El robot esta mirando hacia el objetivo
+pos: El robot se desplaza 
+'''
+def busca_en_linea():
+    repeat 4:
+        if object_here():
+            take()
+            break
+        else:
+            move()
+        
+
+'''
+DESCRIPCION: El robot busca y encuentra un objeto en un mundo 5x5.
+Una vez lo encuentra, termina.
+pre: El robot esta en (1,1) y mira hacia
+pos: El robot se unbica en la casilla donde encontro el objeto
+'''
+"""
+def put_manzana :
+    if object_here() :
+       take()
+"""    
+'''
+DESCRIPCION:
+pre:
+pos:
+'''
+        
+#busca_en_linea()
+
+def subir_izq():
+    repeat 3:
+        turn_left()
+    move()
+    repeat 3:
+        turn_left()
+        
+        
+def subir_derecha():
+    turn_left()
+    move()
+    turn_left()
+    
+def search_manzana():
+    buscar_en_linea()
+    subir_derecha()
+    buscar_en_linea()
+    subir_izq()
+    buscar_en_linea()
+    
+search_manzana()
+
+
+
